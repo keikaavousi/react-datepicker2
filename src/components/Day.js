@@ -46,7 +46,7 @@ export default class Day extends Component {
       isGregorian,
       isToday,
       colors,
-      highlightColor
+      highlightColor,
       ...rest
     } = this.props;
 
