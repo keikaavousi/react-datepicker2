@@ -771,6 +771,9 @@
           className: className
         }, /*#__PURE__*/React__default.createElement("button", _extends_1({
           type: "button",
+          style: {
+            color: colors.length > 0 ? '#D980BB' : '#7a5198'
+          },
           onClick: this.handleClick.bind(this),
           disabled: disabled
         }, rest), isGregorian ? day.format('D') : persianNumber(day.format('jD'))), /*#__PURE__*/React__default.createElement("div", {
