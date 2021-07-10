@@ -64,7 +64,13 @@ export default class Day extends Component {
     return (
       <div className={className}>
 
-        <button type="button" style={{color:highlightColor}} onClick={this.handleClick.bind(this)} disabled={disabled} {...rest}>
+       <button
+          style={{ color: colors.length > 0 ? '#D980BB' : '#7a5198' }}
+          type="button"
+          onClick={this.handleClick.bind(this)}
+          disabled={disabled}
+          {...rest}
+        >
           {isGregorian ? day.format('D') : persianNumber(day.format('jD'))}
         </button>
         <div className={highlightDotContainer} onClick={this.handleClick.bind(this)}>
